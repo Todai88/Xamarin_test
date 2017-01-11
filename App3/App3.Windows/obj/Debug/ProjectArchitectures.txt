@@ -1,0 +1,2 @@
+C:\Users\joaki\Documents\Visual Studio 2013\Projects\App3\App3\App3.Windows\App3.Windows.csproj;neutral
+C:\Users\joaki\Documents\Visual Studio 2013\Projects\App3\App3\App3\App3.csproj;neutral

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.CreateFoundation"
+             Title="Create"
+             Padding="0, 20, 0, 0">
+  <ContentPage.Content>
+    <StackLayout>
+    <Label x:Name="lblInstructions" 
+           VerticalTextAlignment="Center" 
+           Text="Since we are using predefined objects, the string you enter is consider a token."/>
+      <Entry x:Name="txtCreateFoundation" Placeholder="Enter an arbitrary string" />
+      <Button x:Name="btnCreate" Text="Create"/>
+    </StackLayout> 
+  </ContentPage.Content>
+</ContentPage>

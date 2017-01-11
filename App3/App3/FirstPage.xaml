@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.FirstPage"
+             Title="Welcome to our test app!">
+
+  <StackLayout VerticalOptions="Center" Orientation="Vertical">
+    
+    <Label x:Name="lblWelcome" Text="What would you like to test?" HorizontalOptions="Center" />
+   
+    <StackLayout Orientation="Vertical">
+      <Button x:Name="btnGet" Text="Get" Clicked="OnGetButtonClicked"/>
+      <Button x:Name="btnSet" Text="Set" Clicked="OnSetButtonClicked"/>
+      <Button x:Name="btnTest" Text="Test connectivity"/>
+      <Label  x:Name="lblConnectivity" Text="Connectivity Test: "/>
+      <Label  x:Name="lblConnectionType" Text="Connection Type: "/>
+    </StackLayout>
+    
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.GetFoundationPage"
+             Title="Foundations"
+             Padding="0, 20, 0, 0">
+
+  <StackLayout x:Name="mainStackLayout">
+    <Entry x:Name="txtFoundationFilter" Placeholder="Enter a foundation ID" />
+    <Button x:Name="btnFoundationFilter" Text="Get foundation"/>
+    <Button x:Name="btnAllFoundations" Text="Get All foundations"/>
+    
+    <StackLayout Orientation="Vertical">
+      <StackLayout Orientation="Horizontal">
+          <Button x:Name="btnClear"  Text="Clear"/>
+      </StackLayout>
+      <Label x:Name="lblResults" Text="Results:" />
+    </StackLayout>
+    
+    <ListView x:Name="lvResults">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <StackLayout BackgroundColor="#eee" Orientation="Vertical">
+                  <StackLayout Orientation="Horizontal" Padding="10, 0, 10, 0">
+                    <Label Text="{Binding ID, StringFormat='ID: {0}'}" TextColor="#f35e20"/>
+                    <Label Text="{Binding EngineerName, StringFormat='Engineer: {0}'}" 
+                           HorizontalOptions="EndAndExpand" TextColor="#503026"/> 
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" Padding="10, 0, 10, 0">
+                    <Label Text="{Binding Created, StringFormat='Created: {0}'}" TextColor="#f35e20"/>
+                    <Label Text="{Binding CreatedBy, StringFormat='CreatedBy: {0}'}"
+                           HorizontalOptions="EndAndExpand" TextColor="#503026" /> 
+                  </StackLayout>
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+    </ListView>
+
+</StackLayout>
+</ContentPage>

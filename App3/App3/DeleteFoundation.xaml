@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.DeleteFoundation"
+             Title="Delete"
+             Padding="0, 20, 0, 0">
+  <ContentPage.Content>
+    <StackLayout>
+      <Label x:Name="lblID" 
+           VerticalTextAlignment="Center" 
+           Text="ID: (Predefined object: 14778)"/>
+      <Entry x:Name="txtDeleteFoundation_ID" Placeholder="Enter the ID of your object." />
+      <Label x:Name="lblMapID"
+       VerticalTextAlignment="Center"
+       Text="MapID: (Predefined object: 3322)"/>
+      <Entry x:Name="txtDeleteFoundation_MapID" Placeholder="Enter the MapID of your object." />
+      <Button x:Name="btnDelete" Text="Delete"/>
+    </StackLayout> 
+  </ContentPage.Content>
+</ContentPage>
